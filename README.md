@@ -24,7 +24,7 @@ Click "Next", and then "Edit Settings".
 Under General...
 > Hostname: "spxrobots.local"
 >
-> Username: "spx-staff"
+> Username: "staff"
 > Password: "\*\*\*\*\*\*\*\*"
 >
 > SSID: "Robots Bootstrap"
@@ -103,8 +103,8 @@ export TMOUT=600
 #### 8. User Accounts
 
 ```sh
-sudo adduser --disabled-password --comment "" spx-student
-sudo usermod --apend --groups spx-student spx-staff
+sudo adduser --disabled-password --comment "" student
+sudo usermod --apend --groups student staff
 ```
 
 ## Installing Software
