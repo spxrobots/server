@@ -60,6 +60,11 @@ sudo systemctl reboot
 
 #### 3. External Drive
 
+```sh
+sudo mkdir /mnt/spxrobots
+sudo chown staff: /mnt/spxrobots
+```
+
 Add the following single line to /etc/fstab (by running sudoedit /etc/fstab)
 
 ```fstab
