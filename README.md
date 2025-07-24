@@ -107,9 +107,10 @@ export TMOUT=600
 
 #### 8. User Accounts
 
+Use the same password as the WiFi for `student`.
+
 ```sh
-sudo adduser --disabled-password --comment "" student
-sudo passwd -d student
+sudo adduser --comment "" student
 
 sudo usermod --apend --groups student staff
 ```
