@@ -96,6 +96,12 @@ console=serial0,115200
 Edit this file: sudo -e /etc/bash.bashrc
 and add a line at the end:
 
-```
+```sh
 export TMOUT=600
+```
+
+## Installing Software
+
+```sh
+sudo apt install git
 ```
