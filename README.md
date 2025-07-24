@@ -6,7 +6,7 @@ Login details can be found (by staff) here: <https://github.com/spxrobots/server
 
 ### Hardware and Operating System
 
-Format external USB drive to NTFS, and name "spxrobots".
+Format external USB drive to ext4, and name/label "spxrobots".
 
 ### Preparing the SD Card
 
@@ -62,13 +62,12 @@ sudo systemctl reboot
 
 ```sh
 sudo mkdir /mnt/spxrobots
-sudo chown staff: /mnt/spxrobots
 ```
 
 Add the following single line to /etc/fstab (by running sudoedit /etc/fstab)
 
 ```fstab
-LABEL=spxrobots  /mnt/spxrobots  ntfs-3g  defaults,noatime,nofail,uid=1000,gid=1000,umask=0002  0  0
+LABEL=spxrobots  /mnt/spxrobots  auto  defaults,nofail  0  0
 ```
 
 #### 5. Wi-Fi Access Point
