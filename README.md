@@ -111,7 +111,7 @@ Use the same password as the WiFi for `student`.
 ```sh
 sudo adduser --comment "" student
 
-sudo usermod --apend --groups student staff
+sudo usermod --append --groups student staff
 ```
 
 ## Installing Software
