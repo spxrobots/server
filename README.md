@@ -109,6 +109,8 @@ export TMOUT=600
 
 ```sh
 sudo adduser --disabled-password --comment "" student
+sudo passwd -d student
+
 sudo usermod --apend --groups student staff
 ```
 
